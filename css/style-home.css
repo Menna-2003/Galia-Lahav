@@ -1,10 +1,14 @@
 :root{
-
+    --border:#c3c3c3;
 }
 
 *{
     box-sizing: border-box;
     margin: 0;
+}
+
+ul{
+    list-style: none;
 }
 
 a{
@@ -42,8 +46,102 @@ a{
 
 /************* Start heading  ***********/
 
+.social-media{
+    position: absolute;
+    bottom: 10px;
+}
+
+.heading .links .icon:hover{
+    cursor: pointer;
+}
 
 
+.heading .links .icon{
+    width: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+}
 
+.heading .links .icon span{
+    background-color: black;
+    height: 2px;
+    margin-bottom: 5px;
+}
 
+.heading .links .icon span:first-child{
+    width: 100%;
+}
+.heading .links .icon span:nth-child(2){
+    width: 70%;
+}
+.heading .links .icon span:nth-child(3){
+    width: 100%;
+}
+
+.heading .links{
+    width: 25px;
+    margin-left: 10px;
+}
+
+.heading .links ul{
+    position: relative;
+    margin: 0;
+    padding: 10px 0;
+    width: 65%;
+    height: 430px;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: -80%;
+    border-top: 43.5px solid;
+    border-bottom: 1px solid #c3c3c3;
+    background-color: white;
+    border-right: 1px solid #c3c3c3;
+}
+
+.heading .links ul li{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+    margin: 20px 0;
+    padding: 0 30px;
+    color: black;
+    font-family: monospace;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.heading .links ul li a{
+    color: black;
+}
+
+.heading .links:hover ul{
+    left: 0%;  
+    transition: 0.5s;
+}
+
+.heading .links ul img:first-child{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 25px;
+}
+
+.heading .links #search{
+    border: 1px solid var(--border);
+    position: absolute;
+    left: 30px;
+    height: 40px;
+    width: 80%;
+    background-image: url(/images/icons/search.svg);
+    background-position: 230px 12px;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.heading .links img:nth-of-type(2){
+    cursor: pointer;
+    position: absolute;
+}
 /************* End heading  ***********/
