@@ -53,6 +53,7 @@ a{
 /************* Start heading  ***********/
 .heading{
     position: sticky;
+    top: -1px;
     width: 100%;
     z-index: 100;
 }
@@ -60,8 +61,9 @@ a{
 .heading .container{
     padding: 10px;
     display: flex;
-    background-color: #eee;
+    background-color: white;
     justify-content: space-between;
+    box-shadow: 0px 4px 5px 1px #c9c9c96e;
 }
 
 .heading .links .icon:hover{
@@ -627,7 +629,7 @@ a{
     }
     .collection .text{
         display: grid;
-        justify-items: flex-start;
+        justify-items: center;
         width: 90%;
         gap: 10px;
     }
@@ -649,7 +651,6 @@ a{
         background-color: black;
         color: white;
         font-family: serif;
-        margin-top: 12px;
     }
 }
 
@@ -660,70 +661,73 @@ a{
 
 
 /************  start news ****************/
-.news{
-    margin: 95px 0px;
-    position: relative;
-}
-.news .container{
-    margin: 0 150px;
-}
-.news a{
-    text-decoration: none;
-    color: black;
-    display: grid;
-    grid-template-columns: 350px 600px;
-    justify-content: center;
-    gap: 50px;
-    position: relative;
-}
-.news .text {
-    position: relative;
-}
-.news .container .text p:first-of-type{
-    font-family: monospace;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-.news .container .text p:nth-of-type(2){
-    font-size: 32px;
-    font-family: monospace;
-    margin-top: 20px;
-    color: black;
-    width: 300px;
-}
-.news .container .text p:nth-of-type(3){
-    margin-top: 50px;
-    font-size: 15px;
-    font-family: monospace;
-    color:#808080;
-    letter-spacing: 1px;
-}
-.news a img{
-    width: 600px;
-}
-.news .pic--back-ground{
-    position: absolute;
-    background-color: #eee;
-    width: 600px;
-    height: 480px;
-    top: 75px;
-    right: 0;
-    z-index: -1;
-}
-
-.news .text img:last-child{
-    width: 20px;
-    position: absolute;
-    bottom: -40px;
-    left: 0;
-    opacity: 0.1;
-    transform: scaleX(-1);
-    transition: 0.5s;
-}
-
-.news a:hover .text img:last-child{
-    opacity: 1;
-    left: 20px;
+@media (min-width : 1300px) {
+    .news{
+        margin: 95px 0px;
+        position: relative;
+    }
+    .news .container{
+        margin: 0 150px;
+    }
+    .news a{
+        text-decoration: none;
+        color: black;
+        display: grid;
+        grid-template-columns: 350px 600px;
+        justify-content: center;
+        gap: 50px;
+        position: relative;
+    }
+    .news .text {
+        position: relative;
+    }
+    .news .container .text p:first-of-type{
+        font-family: monospace;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .news .container .text p:nth-of-type(2){
+        font-size: 32px;
+        font-family: monospace;
+        margin-top: 20px;
+        color: black;
+        width: 300px;
+    }
+    .news .container .text p:nth-of-type(3){
+        margin-top: 50px;
+        font-size: 15px;
+        font-family: monospace;
+        color:#808080;
+        letter-spacing: 1px;
+    }
+    .news a img{
+        width: 600px;
+    }
+    .news .pic--back-ground{
+        position: absolute;
+        background-color: #eee;
+        width: 600px;
+        height: 480px;
+        top: 75px;
+        right: 0;
+        z-index: -1;
+    }
+    
+    .news .text img:last-child{
+        width: 20px;
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        opacity: 0.1;
+        transform: scaleX(-1);
+        transition: 0.5s;
+    }
+    
+    .news a:hover .text img:last-child{
+        opacity: 1;
+        left: 20px;
+    }
+    
 }
 /************  end news ****************/
 
@@ -738,71 +742,71 @@ a{
 
 
 /***********      start tips      ************/
+@media (min-width : 1300px) {
+    .tips .container{
+        margin: 280px 150px;
+        display: grid;
+        grid-template-columns: 700px 300px;
+        justify-content: center;
+    }
+    .tips .pic img{
+        width: 600px;
+    }
 
-.tips .container{
-    margin: 280px 150px;
-    display: grid;
-    grid-template-columns: 700px 300px;
-    justify-content: center;
-}
-.tips .pic img{
-    width: 600px;
-}
+    .tips .text img{
+        width: 20px;
+        position: absolute;
+        bottom: 195px;
+        left: 0;
+        opacity: 0.1;
+        transform: scaleX(-1);
+        transition: 0.5s;
+    }
 
-.tips .text img{
-    width: 20px;
-    position: absolute;
-    bottom: 195px;
-    left: 0;
-    opacity: 0.1;
-    transform: scaleX(-1);
-    transition: 0.5s;
-}
+    .tips a:hover .text img{
+        opacity: 1;
+        left: 20px;
+    }
 
-.tips a:hover .text img{
-    opacity: 1;
-    left: 20px;
-}
+    .tips .text{
+        position: relative;
+        /* margin-top: 30px; */
+    }
 
-.tips .text{
-    position: relative;
-    /* margin-top: 30px; */
-}
+    .tips .container .text p:first-of-type{
+        font-family: monospace;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .tips .container .text p:nth-of-type(2){
+        font-size: 32px;
+        font-family: monospace;
+        margin-top: 20px;
+        color: black;
+        width: 300px;
+    }
+    .tips .container .text p:nth-of-type(3){
+        margin-top: 50px;
+        font-size: 15px;
+        font-family: monospace;
+        color:#808080;
+        letter-spacing: 1px;
+    }
 
-.tips .container .text p:first-of-type{
-    font-family: monospace;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-.tips .container .text p:nth-of-type(2){
-    font-size: 32px;
-    font-family: monospace;
-    margin-top: 20px;
-    color: black;
-    width: 300px;
-}
-.tips .container .text p:nth-of-type(3){
-    margin-top: 50px;
-    font-size: 15px;
-    font-family: monospace;
-    color:#808080;
-    letter-spacing: 1px;
-}
+    .tips .container .pic{
+        position: relative;
+    }
 
-.tips .container .pic{
-    position: relative;
+    .tips .container .pic .pic--back-ground{
+        position: absolute;
+        background-color: #eee;
+        width: 600px;
+        height: 760px;
+        top: 100px;
+        left: -170px;
+        z-index: -1;
+    }
 }
-
-.tips .container .pic .pic--back-ground{
-    position: absolute;
-    background-color: #eee;
-    width: 600px;
-    height: 760px;
-    top: 100px;
-    left: -170px;
-    z-index: -1;
-}
-
 /***********      end tips      ************/
 
 
@@ -928,3 +932,131 @@ a{
     width: 12px;
 }
 /************   end bottom*************/
+
+
+
+
+
+
+
+
+/************    Start news for mobile   ***************/
+@media (max-width : 1300px) {
+    .keep-in-touch , .bottom{
+        display: none;
+    }
+    .news{
+        margin: 50px 0;
+        padding-top: 255px;
+        position: relative;
+    }
+    .news .container .pic1-{
+        width: 90%;
+        max-width: 400px;
+        position: absolute;
+        top: -34px;
+        margin: 20px;
+    }
+    .news .container .text img{
+        width: 20px;
+        transform: scaleX(-1);
+    }
+
+    .news a{
+        text-decoration: none;
+        color: black;
+        display: grid;
+        justify-content: center;
+    }
+    .news .text {
+        position: relative;
+        display: grid;
+        margin: 0 40px ;
+    }
+    .news .container .text p:first-of-type{
+        font-family: monospace;
+        letter-spacing: 2px;
+        color: #808080;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+    .news .container .text p:nth-of-type(2){
+        font-size: 32px;
+        font-family: monospace;
+        margin-top: 10px;
+        color: black;
+        width: 300px;
+    }
+    .news .container .text p:nth-of-type(3){
+        margin: 35px 0;
+        font-size: 15px;
+        font-family: monospace;
+        color: #808080;
+        letter-spacing: 1px;
+        max-width: 83%;
+    }
+    
+}
+
+/************    end news for mobile   ***************/
+
+
+
+
+
+/************    start tips for mobile    **************/
+
+@media (max-width : 1300px) {
+    .tips{
+        margin: 50px 0;
+        padding-top: 450px;
+        position: relative;
+    }
+    .tips .container .pic1-{
+        width: 90%;
+        max-width: 370px;
+        position: absolute;
+        top: -34px;
+        margin: 20px;
+    }
+    .tips .container .text img{
+        width: 20px;
+        transform: scaleX(-1);
+    }
+
+    .tips a{
+        text-decoration: none;
+        color: black;
+        display: grid;
+        justify-content: center;
+    }
+    .tips .text {
+        position: relative;
+        display: grid;
+        margin: 0 40px ;
+    }
+    .tips .container .text p:first-of-type{
+        font-family: monospace;
+        letter-spacing: 2px;
+        color: #808080;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+    .tips .container .text p:nth-of-type(2){
+        font-size: 32px;
+        font-family: monospace;
+        margin-top: 10px;
+        color: black;
+        width: 300px;
+    }
+    .tips .container .text p:nth-of-type(3){
+        margin: 35px 0;
+        font-size: 15px;
+        font-family: monospace;
+        color: #808080;
+        letter-spacing: 1px;
+        max-width: 83%;
+    }
+    
+}
+/************    end tips for mobile    **************/
