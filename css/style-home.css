@@ -1,21 +1,21 @@
-:root{
-    --border:#c3c3c3;
+:root {
+    --border: #c3c3c3;
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.logo{
+.logo {
     font-family: monospace;
     color: black;
     font-size: 20px;
@@ -23,11 +23,11 @@ a{
     text-transform: uppercase;
     font-weight: 600;
 }
-.logo a{
+.logo a {
     color: black;
 }
 
-.shipping-message{
+.shipping-message {
     display: flex;
     background-color: black;
     width: 100%;
@@ -49,16 +49,15 @@ a{
 }
  */
 
-
 /************* Start heading  ***********/
-.heading{
+.heading {
     position: sticky;
     top: -1px;
     width: 100%;
     z-index: 100;
 }
 
-.heading .container{
+.heading .container {
     padding: 10px;
     display: flex;
     background-color: white;
@@ -66,41 +65,41 @@ a{
     box-shadow: 0px 4px 5px 1px #c9c9c96e;
 }
 
-.heading .links .icon:hover{
+.heading .links .icon:hover {
     cursor: pointer;
 }
 
-.heading .links .icon{
+.heading .links .icon {
     width: 25px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content: flex-start;
 }
 
-.heading .links .icon span{
+.heading .links .icon span {
     background-color: black;
     height: 2px;
     margin-bottom: 5px;
 }
 
-.heading .links .icon span:first-child{
+.heading .links .icon span:first-child {
     width: 100%;
 }
-.heading .links .icon span:nth-child(2){
+.heading .links .icon span:nth-child(2) {
     width: 70%;
 }
-.heading .links .icon span:nth-child(3){
+.heading .links .icon span:nth-child(3) {
     width: 100%;
 }
 
-.heading .links{
+.heading .links {
     display: inline-flex;
     width: 25px;
     height: 34px;
     padding-top: 20px;
 }
 
-.heading .links ul{
+.heading .links ul {
     position: relative;
     margin: 0;
     padding: 10px 0;
@@ -116,13 +115,13 @@ a{
     border-right: 1px solid #c3c3c3;
 }
 
-@media (max-width:599px) {
-    .heading .links ul{
+@media (max-width: 599px) {
+    .heading .links ul {
         width: 66%;
     }
 }
 
-.heading .links ul li{
+.heading .links ul li {
     height: 40px;
     width: 100%;
     border-bottom: 1px solid var(--border);
@@ -134,16 +133,16 @@ a{
     text-transform: uppercase;
 }
 
-.heading .links ul li a{
+.heading .links ul li a {
     color: black;
 }
 
-.heading .links:hover ul{
-    left: 0%;  
+.heading .links:hover ul {
+    left: 0%;
     transition: 0.5s;
 }
 
-.heading .links #search{
+.heading .links #search {
     border: 1px solid var(--border);
     position: absolute;
     left: 30px;
@@ -155,60 +154,52 @@ a{
     padding: 20px;
 }
 
-.heading .container .logo{
+.heading .container .logo {
     height: 55px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-.heading .box{
-    display: flex; 
-    align-items: center;   
+.heading .box {
+    display: flex;
+    align-items: center;
 }
 
-.heading .box img:first-child{
+.heading .box img:first-child {
     width: 23px;
-    margin: 0 10px 0 0;    
+    margin: 0 10px 0 0;
 }
 
-.heading .box img:nth-child(2){
+.heading .box img:nth-child(2) {
     width: 23px;
 }
 
 /************* End heading  ***********/
 
-
-
-
-
-
-
-
 /************* start interface ********/
 
-.interface .container{
+.interface .container {
     position: relative;
     width: 100%;
     height: 727px;
     overflow: hidden;
 }
 
-
-@media (min-width : 600px) {
-    .interface .container{
+@media (min-width: 600px) {
+    .interface .container {
         display: grid;
         justify-items: center;
     }
-    video{
+    video {
         position: absolute;
         top: -200px;
     }
-    .interface .container img{
+    .interface .container img {
         display: none;
     }
-        
-    .interface .container p:first-of-type{
+
+    .interface .container p:first-of-type {
         position: absolute;
         top: 230px;
         text-transform: uppercase;
@@ -217,15 +208,15 @@ a{
         color: rgb(245, 245, 245);
     }
 
-    .interface .container p:nth-of-type(2){
+    .interface .container p:nth-of-type(2) {
         position: absolute;
         top: 330px;
         font-family: serif;
         font-size: 22px;
-        color: #F5F5F5;
+        color: #f5f5f5;
     }
 
-    .interface .container button{
+    .interface .container button {
         border: 1px solid white;
         background-color: transparent;
         color: white;
@@ -239,20 +230,19 @@ a{
     }
 }
 
-
 @media (max-width: 599px) {
-    .interface .container video{
+    .interface .container video {
         display: none;
     }
 
-    .interface .container img{
+    .interface .container img {
         width: 156%;
         position: absolute;
         left: -84px;
         z-index: -1;
     }
-    
-    .interface .container p:first-of-type{
+
+    .interface .container p:first-of-type {
         position: absolute;
         top: 283px;
         left: 35%;
@@ -262,16 +252,16 @@ a{
         color: #f5f5f5;
     }
 
-    .interface .container p:nth-of-type(2){
+    .interface .container p:nth-of-type(2) {
         position: absolute;
         top: 346px;
         left: 8%;
         font-family: serif;
         font-size: 15px;
-        color: #F5F5F5;
+        color: #f5f5f5;
     }
 
-    .interface .container button{
+    .interface .container button {
         border: 1px solid white;
         background-color: transparent;
         color: white;
@@ -284,20 +274,13 @@ a{
         font-family: serif;
         text-transform: uppercase;
     }
-
 }
-
 
 /************* end interface ********/
 
-
-
-
-
-
 /******** start slider **********/
-@media (min-width : 600px){
-    .slideshow p:first-child{
+@media (min-width: 600px) {
+    .slideshow p:first-child {
         font-size: 45px;
         font-family: serif;
         text-transform: uppercase;
@@ -305,51 +288,51 @@ a{
     }
 }
 
-.slideshow p:first-child{
+.slideshow p:first-child {
     font-size: 35px;
     font-family: serif;
     text-transform: uppercase;
 }
 
-.slideshow{
+.slideshow {
     margin: 45px 0;
     display: grid;
     justify-items: center;
     gap: 25px;
 }
 
-.slideshow .container{
+.slideshow .container {
     position: relative;
     display: grid;
     justify-content: center;
     gap: 35px;
 }
 
-@media (min-width : 690px) {
-    .slideshow .container{
+@media (min-width: 690px) {
+    .slideshow .container {
         grid-template-columns: repeat(2, auto);
     }
 }
 
-@media (min-width : 1024px) {
-    .slideshow .container{
+@media (min-width: 1024px) {
+    .slideshow .container {
         grid-template-columns: repeat(3, auto);
     }
 }
 
-.slideshow .container .slide{
+.slideshow .container .slide {
     width: 300px;
     height: 399px;
     position: relative;
 }
 
-.slideshow .container img{
+.slideshow .container img {
     width: 100%;
     z-index: -1;
     position: absolute;
 }
 
-.slideshow .container .slide .text{
+.slideshow .container .slide .text {
     display: flex;
     position: relative;
     width: 300px;
@@ -358,7 +341,7 @@ a{
     align-content: center;
 }
 
-.slideshow .container .slide p:first-of-type{
+.slideshow .container .slide p:first-of-type {
     font-size: 45px;
     color: white;
     position: absolute;
@@ -367,11 +350,11 @@ a{
     text-transform: uppercase;
 }
 
-.slideshow .container .slide.two p:first-of-type{
+.slideshow .container .slide.two p:first-of-type {
     left: 50px;
 }
 
-.slideshow .container .slide p:nth-of-type(2){
+.slideshow .container .slide p:nth-of-type(2) {
     font-size: 24px;
     color: white;
     position: absolute;
@@ -381,24 +364,16 @@ a{
 
 /******** end slider **********/
 
-
-
-
-
-
-
-
-
 /******** Start shop ***********/
 
-@media (min-width : 600px) {
-    .shop .container{
+@media (min-width: 600px) {
+    .shop .container {
         position: relative;
         width: 100%;
         height: 540px;
         overflow: hidden;
     }
-    .shop .container .box{
+    .shop .container .box {
         display: grid;
         justify-items: flex-start;
         left: 180px;
@@ -406,26 +381,26 @@ a{
         width: 55%;
         height: 100%;
     }
-    .shop .container img:nth-of-type(2){
+    .shop .container img:nth-of-type(2) {
         display: none;
     }
-    .shop .container img:first-of-type{
+    .shop .container img:first-of-type {
         width: 100%;
         z-index: -1;
         height: 100%;
     }
-    .shop .container .box p:first-of-type{
+    .shop .container .box p:first-of-type {
         text-align: left;
         top: 19%;
         font-size: 48px;
         width: 100%;
     }
-    .shop .container .box p:nth-of-type(2){
+    .shop .container .box p:nth-of-type(2) {
         font-size: 15px;
         text-align: left;
         top: 52%;
     }
-    .shop .container .box button{
+    .shop .container .box button {
         width: 144px;
         height: 50px;
         position: absolute;
@@ -440,9 +415,8 @@ a{
     }
 }
 
-
-@media (max-width: 599px){        
-    .shop .container{
+@media (max-width: 599px) {
+    .shop .container {
         display: grid;
         justify-items: center;
         position: relative;
@@ -450,21 +424,21 @@ a{
         height: 540px;
         overflow: hidden;
     }
-    .shop .container .box{
+    .shop .container .box {
         display: grid;
         justify-items: center;
     }
-    .shop .container img:first-of-type{
+    .shop .container img:first-of-type {
         display: none;
     }
-    .shop .container img:nth-of-type(2){
+    .shop .container img:nth-of-type(2) {
         position: absolute;
         z-index: -1;
         width: 158%;
     }
 }
 
-.shop .container p:first-of-type{
+.shop .container p:first-of-type {
     font-family: serif;
     position: absolute;
     color: white;
@@ -475,7 +449,7 @@ a{
     text-transform: capitalize;
 }
 
-.shop .container p:nth-of-type(2){
+.shop .container p:nth-of-type(2) {
     font-family: serif;
     position: absolute;
     color: white;
@@ -486,7 +460,7 @@ a{
     text-transform: capitalize;
 }
 
-.shop .container button{
+.shop .container button {
     width: 275px;
     height: 50px;
     position: absolute;
@@ -502,69 +476,64 @@ a{
 
 /*************** end shop ********************/
 
-
-
-
-
-
 /*************** start collection ********************/
-@media (min-width : 740px) {
-    .collection .container{
+@media (min-width: 740px) {
+    .collection .container {
         background-color: black;
         width: 100%;
         height: auto;
         display: grid;
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(2, auto);
         justify-content: space-around;
         padding: 90px 70px;
         align-items: center;
     }
-    .collection .container .text{
+    .collection .container .text {
         display: grid;
         width: 400px;
         height: 500px;
         align-content: center;
         gap: 40px;
     }
-    .collection .container img:last-child{
+    .collection .container img:last-child {
         min-width: 300px;
         max-width: 550px;
     }
-    .collection .container .text p:first-of-type{
+    .collection .container .text p:first-of-type {
         font-size: 12px;
         letter-spacing: 1px;
         color: #808080;
         margin-bottom: -14px;
     }
-    .collection .container .text p:nth-of-type(2){
+    .collection .container .text p:nth-of-type(2) {
         color: white;
         font-size: 50px;
         font-family: serif;
         margin-top: -25px;
     }
-    .collection .container .text p:nth-of-type(3){
+    .collection .container .text p:nth-of-type(3) {
         color: #808080;
         font-size: 15px;
         letter-spacing: 1px;
     }
-    .collection .container .text p:nth-of-type(4){
+    .collection .container .text p:nth-of-type(4) {
         color: white;
         font-size: 12px;
         letter-spacing: 1px;
         position: relative;
         width: 163px;
     }
-    .collection .container .text p:nth-of-type(4):hover{
+    .collection .container .text p:nth-of-type(4):hover {
         animation-name: p-motion;
-        animation-duration: 3s; 
+        animation-duration: 3s;
         animation-timing-function: ease-in;
     }
-    .collection .container .text p:nth-of-type(4):hover img{
+    .collection .container .text p:nth-of-type(4):hover img {
         animation-name: arrow-motion;
-        animation-duration: 3s; 
+        animation-duration: 3s;
         animation-timing-function: ease-in;
     }
-    .collection .container .text img:first-of-type{
+    .collection .container .text img:first-of-type {
         width: 200px;
         position: absolute;
         top: 22px;
@@ -573,79 +542,79 @@ a{
     }
 
     @keyframes arrow-motion {
-        20%{
+        20% {
             left: -20px;
             opacity: 1;
         }
-        80%{
+        80% {
             left: -20px;
             opacity: 1;
         }
-        100%{
+        100% {
             left: -50px;
         }
     }
     @keyframes p-motion {
-        10%{
+        10% {
             margin-left: 20px;
         }
-        80%{
+        80% {
             margin-left: 20px;
         }
-        100%{
+        100% {
             margin-left: 0;
         }
     }
-    .collection .container.two{
+    .collection .container.two {
         display: none;
     }
-    .collection .container.two img{
+    .collection .container.two img {
         display: none;
     }
 }
 
 @media (max-width: 739px) {
-    .collection .container.one img{
+    .collection .container.one img {
         display: none;
     }
-    .collection .container.one p{
+    .collection .container.one p {
         display: none;
     }
-    .collection .container.two{
+    .collection .container.two {
         display: grid;
         width: 100%;
         justify-items: center;
     }
-    .collection span{
+    .collection span {
         background-color: black;
         width: 100%;
         position: absolute;
         height: 330px;
         z-index: -1;
     }
-    .collection .container.two img{
+    .collection .container.two img {
         width: 80%;
         margin: 50px 0;
     }
-    .collection .text{
+    .collection .text {
         display: grid;
         justify-items: center;
         width: 90%;
         gap: 10px;
     }
-    .collection .text p:first-child{
+    .collection .text p:first-child {
         color: #808080;
         letter-spacing: 1px;
         font-size: 12px;
         font-family: serif;
         width: 162px;
     }
-    .collection .text p:nth-child(2){
+    .collection .text p:nth-child(2) {
         font-family: serif;
         font-size: 30px;
         width: 80%;
     }
-    .collection .text button{
+    .collection .text button {
         width: 90%;
         height: 43px;
         background-color: black;
@@ -656,20 +625,16 @@ a{
 
 /*************** end collection ********************/
 
-
-
-
-
 /************  start news ****************/
-@media (min-width : 1300px) {
-    .news{
+@media (min-width: 1300px) {
+    .news {
         margin: 95px 0px;
         position: relative;
     }
-    .news .container{
+    .news .container {
         margin: 0 150px;
     }
-    .news a{
+    .news a {
         text-decoration: none;
         color: black;
         display: grid;
@@ -681,29 +646,29 @@ a{
     .news .text {
         position: relative;
     }
-    .news .container .text p:first-of-type{
+    .news .container .text p:first-of-type {
         font-family: monospace;
         letter-spacing: 1px;
         text-transform: uppercase;
     }
-    .news .container .text p:nth-of-type(2){
+    .news .container .text p:nth-of-type(2) {
         font-size: 32px;
         font-family: monospace;
         margin-top: 20px;
         color: black;
         width: 300px;
     }
-    .news .container .text p:nth-of-type(3){
+    .news .container .text p:nth-of-type(3) {
         margin-top: 50px;
         font-size: 15px;
         font-family: monospace;
-        color:#808080;
+        color: #808080;
         letter-spacing: 1px;
     }
-    .news a img{
+    .news a img {
         width: 600px;
     }
-    .news .pic--back-ground{
+    .news .pic--back-ground {
         position: absolute;
         background-color: #eee;
         width: 600px;
@@ -712,8 +677,8 @@ a{
         right: 0;
         z-index: -1;
     }
-    
-    .news .text img:last-child{
+
+    .news .text img:last-child {
         width: 20px;
         position: absolute;
         bottom: -40px;
@@ -722,38 +687,99 @@ a{
         transform: scaleX(-1);
         transition: 0.5s;
     }
-    
-    .news a:hover .text img:last-child{
+
+    .news a:hover .text img:last-child {
         opacity: 1;
         left: 20px;
     }
-    
+    .news .line {
+        display: none;
+    }
+    .news .line img {
+        display: none;
+    }
 }
+
 /************  end news ****************/
 
+/************    Start news for mobile   ***************/
+@media (max-width: 1300px) {
+    .news {
+        margin: 80px 0;
+        padding-top: 255px;
+        position: relative;
+    }
+    .news .container .pic1- {
+        width: 90%;
+        max-width: 400px;
+        position: absolute;
+        top: -34px;
+        margin: 20px;
+    }
+    .news .container .text img {
+        width: 20px;
+        transform: scaleX(-1);
+    }
 
+    .news a {
+        text-decoration: none;
+        color: black;
+        display: grid;
+        justify-content: center;
+    }
+    .news .text {
+        position: relative;
+        display: grid;
+        margin: 0 40px;
+    }
+    .news .container .text p:first-of-type {
+        font-family: monospace;
+        letter-spacing: 2px;
+        color: #808080;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+    .news .container .text p:nth-of-type(2) {
+        font-size: 32px;
+        font-family: monospace;
+        margin-top: 10px;
+        color: black;
+        width: 300px;
+    }
+    .news .container .text p:nth-of-type(3) {
+        margin: 35px 0;
+        font-size: 15px;
+        font-family: monospace;
+        color: #808080;
+        letter-spacing: 1px;
+        max-width: 83%;
+    }
+    .news div:last-child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0 0 0;
+    }
+    .news div:last-child img {
+        width: 340px;
+    }
+}
 
-
-
-
-
-
-
-
+/************    end news for mobile   ***************/
 
 /***********      start tips      ************/
-@media (min-width : 1300px) {
-    .tips .container{
+@media (min-width: 1300px) {
+    .tips .container {
         margin: 280px 150px;
         display: grid;
         grid-template-columns: 700px 300px;
         justify-content: center;
     }
-    .tips .pic img{
+    .tips .pic img {
         width: 600px;
     }
 
-    .tips .text img{
+    .tips .text img {
         width: 20px;
         position: absolute;
         bottom: 195px;
@@ -763,41 +789,41 @@ a{
         transition: 0.5s;
     }
 
-    .tips a:hover .text img{
+    .tips a:hover .text img {
         opacity: 1;
         left: 20px;
     }
 
-    .tips .text{
+    .tips .text {
         position: relative;
         /* margin-top: 30px; */
     }
 
-    .tips .container .text p:first-of-type{
+    .tips .container .text p:first-of-type {
         font-family: monospace;
         letter-spacing: 1px;
         text-transform: uppercase;
     }
-    .tips .container .text p:nth-of-type(2){
+    .tips .container .text p:nth-of-type(2) {
         font-size: 32px;
         font-family: monospace;
         margin-top: 20px;
         color: black;
         width: 300px;
     }
-    .tips .container .text p:nth-of-type(3){
+    .tips .container .text p:nth-of-type(3) {
         margin-top: 50px;
         font-size: 15px;
         font-family: monospace;
-        color:#808080;
+        color: #808080;
         letter-spacing: 1px;
     }
 
-    .tips .container .pic{
+    .tips .container .pic {
         position: relative;
     }
 
-    .tips .container .pic .pic--back-ground{
+    .tips .container .pic .pic--back-ground {
         position: absolute;
         background-color: #eee;
         width: 600px;
@@ -806,225 +832,43 @@ a{
         left: -170px;
         z-index: -1;
     }
-}
-/***********      end tips      ************/
 
-
-
-
-
-
-
-
-
-
-
-
-/**********     start keep-in-touch    **********/
-.keep-in-touch{
-    position: relative;
-    height: 750px;
-}
-
-.keep-in-touch img{
-    position: absolute;
-    left: 500px;
-    top: 50px;
-    width: 600px;
-    z-index: -1;
-}
-
-.keep-in-touch .text{
-    display: grid;
-    position: absolute;
-    top: 200px;
-    left: 245px;
-}
-
-.keep-in-touch .text p:first-of-type{
-    margin-top: 50px;
-    font-size: 11px;
-    font-family: monospace;
-    letter-spacing: 1px;
-}
-.keep-in-touch .text p:nth-of-type(2){
-    letter-spacing: 1px;
-    width: 300px;
-    font-size: 40px;
-}
-.keep-in-touch .text p:nth-of-type(3){
-    width: 300px;
-    margin-top: 10px;
-    font-size: 13px;
-    font-family: monospace;
-    color:#808080;
-    letter-spacing: 1px;
-    line-height: 20px;
-
-}
-.keep-in-touch .text #email-add{
-    border: 1px solid var(--border);
-    margin-top: 50px;
-    height: 40px;
-    width: 80%; 
-    padding: 20px;
-}
-.keep-in-touch .text img{
-    width: 20px;
-    position: absolute;
-    top: 287px;
-    left: 210px;
-    z-index: 100;
-    transition: 0.3s;
-    opacity: 0.2;
-}
-.keep-in-touch .text img:hover{
-    opacity: 1;
-    cursor: pointer;
-}
-
-
-/**********     end keep-in-touch    **********/
-
-
-
-
-
-
-
-
-/************   start bottom*************/
-.bottom{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-rows: 40px 70px;
-    grid-template-columns: repeat(8,auto);
-    grid-template-areas: "line line line line line line line line "
-                        "social social social links links links links links ";
-    height: 200px;
-}
-.bottom p{
-    color: #aeaeae;
-    font-size: 20px;
-    grid-area: line;
-}
-
-.bottom ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    font-size: 9px;
-    justify-content: flex-end;
-    grid-area: links ;
-}
-.bottom ul li a{
-    color: black;
-}
-
-.bottom .social-media {
-    display: flex;
-    gap: 22px;
-    grid-area: social;
-}
-
-.bottom .social-media img{
-    width: 12px;
-}
-/************   end bottom*************/
-
-
-
-
-
-
-
-
-/************    Start news for mobile   ***************/
-@media (max-width : 1300px) {
-    .keep-in-touch , .bottom{
+    .tips .line {
         display: none;
     }
-    .news{
-        margin: 50px 0;
-        padding-top: 255px;
-        position: relative;
-    }
-    .news .container .pic1-{
-        width: 90%;
-        max-width: 400px;
-        position: absolute;
-        top: -34px;
-        margin: 20px;
-    }
-    .news .container .text img{
-        width: 20px;
-        transform: scaleX(-1);
+
+    .tips .line img {
+        display: none;
     }
 
-    .news a{
-        text-decoration: none;
-        color: black;
-        display: grid;
-        justify-content: center;
+    .tips button {
+        display: none;
     }
-    .news .text {
-        position: relative;
-        display: grid;
-        margin: 0 40px ;
-    }
-    .news .container .text p:first-of-type{
-        font-family: monospace;
-        letter-spacing: 2px;
-        color: #808080;
-        font-size: 10px;
-        text-transform: uppercase;
-    }
-    .news .container .text p:nth-of-type(2){
-        font-size: 32px;
-        font-family: monospace;
-        margin-top: 10px;
-        color: black;
-        width: 300px;
-    }
-    .news .container .text p:nth-of-type(3){
-        margin: 35px 0;
-        font-size: 15px;
-        font-family: monospace;
-        color: #808080;
-        letter-spacing: 1px;
-        max-width: 83%;
-    }
-    
 }
 
-/************    end news for mobile   ***************/
-
-
-
-
+/***********      end tips      ************/
 
 /************    start tips for mobile    **************/
 
-@media (max-width : 1300px) {
-    .tips{
-        margin: 50px 0;
+@media (max-width: 1300px) {
+    .tips {
+        margin: 80px 0;
         padding-top: 450px;
         position: relative;
     }
-    .tips .container .pic1-{
+    .tips .container .pic1- {
         width: 90%;
         max-width: 370px;
         position: absolute;
         top: -34px;
         margin: 20px;
     }
-    .tips .container .text img{
+    .tips .container .text img {
         width: 20px;
         transform: scaleX(-1);
     }
 
-    .tips a{
+    .tips a.container {
         text-decoration: none;
         color: black;
         display: grid;
@@ -1033,23 +877,23 @@ a{
     .tips .text {
         position: relative;
         display: grid;
-        margin: 0 40px ;
+        margin: 0 40px;
     }
-    .tips .container .text p:first-of-type{
+    .tips .container .text p:first-of-type {
         font-family: monospace;
         letter-spacing: 2px;
         color: #808080;
         font-size: 10px;
         text-transform: uppercase;
     }
-    .tips .container .text p:nth-of-type(2){
+    .tips .container .text p:nth-of-type(2) {
         font-size: 32px;
         font-family: monospace;
         margin-top: 10px;
         color: black;
         width: 300px;
     }
-    .tips .container .text p:nth-of-type(3){
+    .tips .container .text p:nth-of-type(3) {
         margin: 35px 0;
         font-size: 15px;
         font-family: monospace;
@@ -1057,6 +901,240 @@ a{
         letter-spacing: 1px;
         max-width: 83%;
     }
-    
+    .tips div.line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0 0 0;
+    }
+    .tips div.line img {
+        width: 340px;
+    }
+    .tips .button {
+        display: flex;
+        justify-content: center;
+        margin: 55px 0;
+    }
+    .tips .button button {
+        width: 90%;
+        height: 43px;
+        background-color: black;
+        color: white;
+        font-family: serif;
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
 }
 /************    end tips for mobile    **************/
+
+/**********     start keep-in-touch    **********/
+
+@media (min-width: 800px) {
+    .keep-in-touch {
+        position: relative;
+        height: 750px;
+    }
+
+    .keep-in-touch img {
+        position: absolute;
+        left: 500px;
+        top: 50px;
+        width: 600px;
+        z-index: -1;
+    }
+
+    .keep-in-touch .text {
+        display: grid;
+        position: absolute;
+        top: 200px;
+        left: 245px;
+    }
+
+    .keep-in-touch .text p:first-of-type {
+        margin-top: 50px;
+        font-size: 11px;
+        font-family: monospace;
+        letter-spacing: 1px;
+    }
+    .keep-in-touch .text p:nth-of-type(2) {
+        letter-spacing: 1px;
+        width: 300px;
+        font-size: 40px;
+    }
+    .keep-in-touch .text p:nth-of-type(3) {
+        width: 300px;
+        margin-top: 10px;
+        font-size: 13px;
+        font-family: monospace;
+        color: #808080;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+    .keep-in-touch .text #email-add {
+        border: 1px solid var(--border);
+        margin-top: 50px;
+        height: 40px;
+        width: 80%;
+        padding: 20px;
+    }
+    .keep-in-touch .text img {
+        width: 20px;
+        position: absolute;
+        top: 287px;
+        left: 210px;
+        z-index: 100;
+        transition: 0.3s;
+        opacity: 0.2;
+    }
+    .keep-in-touch .text img:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 799px) {
+    .keep-in-touch {
+        position: relative;
+        height: 380px;
+    }
+
+    .keep-in-touch img {
+        display: none;
+    }
+
+    .keep-in-touch .text {
+        display: grid;
+        position: absolute;
+        top: 0;
+        left: 10%;
+    }
+
+    .keep-in-touch .text p:first-of-type {
+        margin-top: 50px;
+        font-size: 11px;
+        font-family: monospace;
+        letter-spacing: 1px;
+    }
+    .keep-in-touch .text p:nth-of-type(2) {
+        letter-spacing: 1px;
+        width: 300px;
+        font-size: 30px;
+    }
+    .keep-in-touch .text p:nth-of-type(3) {
+        width: 300px;
+        margin-top: 10px;
+        font-size: 13px;
+        font-family: monospace;
+        color: #808080;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+    .keep-in-touch .text #email-add {
+        border: 1px solid var(--border);
+        margin-top: 50px;
+        height: 40px;
+        width: 90%;
+        padding: 20px;
+    }
+    .keep-in-touch .text img {
+        width: 20px;
+        position: absolute;
+        display: block;
+        top: 263px;
+        left: 80%;
+        z-index: 100;
+        transition: 0.3s;
+        opacity: 0.2;
+    }
+    .keep-in-touch .text img:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+/**********     end keep-in-touch    **********/
+
+/************   start bottom*************/
+
+@media (max-width: 799px) {
+    .bottom {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(3, auto);
+        height: 300px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .bottom p {
+        color: #aeaeae;
+        font-size: 20px;
+        width: 90%;
+        overflow: hidden;
+    }
+    .bottom ul {
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        gap: 23px;
+        font-size: 9.4px;
+        justify-items: center;
+    }
+    .bottom ul li a {
+        color: black;
+    }
+    .bottom .social-media {
+        display: flex;
+        gap: 22px;
+    }
+
+    .bottom .social-media img {
+        width: 15px;
+    } 
+}
+
+@media (min-width:800px) {
+    .bottom {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-rows: 40px 70px;
+        grid-template-columns: repeat(8, auto);
+        grid-template-areas:
+            "line line line line line line line line "
+            "social social social links links links links links ";
+        height: 200px;
+    }
+    .bottom p {
+        color: #aeaeae;
+        font-size: 20px;
+        grid-area: line;
+    }
+
+    .bottom ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        font-size: 9px;
+        justify-content: flex-end;
+        grid-area: links;
+    }
+    .bottom ul li a {
+        color: black;
+    }
+
+    .bottom .social-media {
+        display: flex;
+        gap: 22px;
+        grid-area: social;
+    }
+
+    .bottom .social-media img {
+        width: 12px;
+    }
+
+}
+
+/************   end bottom*************/
