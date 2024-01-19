@@ -1,2 +1,2 @@
 # Galia-Lahav
-Galia-Lahav is excisting website I'll try to make a sample of it
+Galia-Lahav is excisting website I tried to make a sample of it to practice. 
